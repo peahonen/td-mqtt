@@ -1,0 +1,2 @@
+shlibs:Depends=libc6 (>= 2.13-28), libmosquitto0 (>= 0.9), libtelldus-core2 (>= 2.1.0)
+misc:Depends=

@@ -1,0 +1,5 @@
+Template: td-mqtt/broker
+Type: string
+Default: mqtt
+Description: MQTT broker address
+ Hostname of MQTT broker to connect to.

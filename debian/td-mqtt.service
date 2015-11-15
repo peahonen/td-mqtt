@@ -1,0 +1,12 @@
+[Unit]
+Description=Telldus - mosquitto bridge daemon
+
+[Service]
+EnvironmentFile=-/etc/default/td-mqtt
+ExecStart=/bin/td-mqtt -h ${BROKER} -d 1
+User=nobody
+Group=nogroup
+
+[Install]
+WantedBy=multi-user.target
+

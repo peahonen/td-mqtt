@@ -1,0 +1,9 @@
+#!/bin/bash
+version=0.0
+mkdir pkg
+
+git archive --format tgz --prefix td-mqtt-${version}/ -o pkg/td-mqtt_${version}.orig.tar.gz HEAD
+cd pkg
+tar zxvf td-mqtt*.tar.gz
+cd td-mqtt-${version}
+dpkg-buildpackage -rfakeroot -uc -us
